@@ -1,7 +1,6 @@
 import React from 'react'
 import { Nav, NavbarBrand, NavItem, NavLink } from 'reactstrap';
 
-
 function Navbar(props) {
     return (
         <Nav
@@ -22,6 +21,7 @@ function Navbar(props) {
                             onClick={() => props.setPage(index)}
                         >
                             {items.name}
+                            {/* {items.name === 'Cart' ? props.cart : ''} */}
                         </NavLink>
                     </NavItem>
                 )
@@ -29,5 +29,4 @@ function Navbar(props) {
         </Nav>
     );
 }
-
 export default Navbar;
